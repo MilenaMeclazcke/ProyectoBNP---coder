@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+      
+}
+
+/*nav bar*/
+
+.header {
+    display: flex;
+}
+
+.navtopbar{
+    display: flex;
+    padding: 30px;
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.616);
+    position:fixed;
+    top: 0%;
+    margin: 0;
+}   
+.opcionesnav a{
+    display: flex;
+    font-family: "montserrat";
+    font-weight: bolder;
+    justify-content: space-between;
+    color: white;
+    width:100%;
+    margin-right: 40px;
+}
+
+.opcionesnav{
+    display: flex;
+    text-align: center;
+}
+
+.bnplogonav {
+    font-family: "montserrat";
+    font-weight: bolder;
+    color: white;
+    text-align: start;
+}
+
+.menu {
+    display:flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.menu span {
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    
+}
+/*BODY*/
+    /*home*/
+.indexHome {
+    background-image: url(../imagenes/degrade\ verdeazul.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-size: cover;
+}
+
+.bodymain {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    max-height: 100%;
+}
+.boxIndexpri{
+    display: flex;
+    justify-content: center;
+    gap:15px;
+    padding: 30px;
+    align-items: center;
+}
+
+.boxIndexseg {
+    display: flex;
+    justify-content: center;
+    gap:15px;
+    padding: 30px;
+    align-items: center;
+}
+
+main h1{
+    font-family: "poppins";
+    text-align: center; 
+    color: rgb(255, 255, 255);
+    margin: 10%;
+    border: 50%;
+}
+
+div h2{
+    font-family: "montserrat";
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align:left;
+    color: white;
+    margin: 5%;
+    margin-bottom: 0%;
+    padding: 5%;
+}
+
+.parrafoHome{
+    color: white;
+    font-family: 'poppins';
+    font-size: large;
+    text-align:left;
+    padding: 10px;
+    margin-left: 50px;
+    width: 700px;
+    height: 600px;
+    margin: 10%;
+    border: 10px;
+    
+}
+
+.imgreutilizar{
+    display: flex;
+    width: 50%;
+    height: 50%;
+    margin: 10px;
+    padding: 50px;
+    border-radius: 2rem;
+}
+
+
+   /*galería*/
+.pagGaleria {
+    background-color: #2c2c2c;
+    background-image: url(../imagenes/fondo\ degrade.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section .cardsEventosgaleria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10%;
+
+}
+.sectionGaleria {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    gap:15px;
+    align-items: center;
+    
+}
+
+.sectionGaleria img {
+    width: 1000px;
+    height: 500px;
+    object-fit: cover;
+}
+
+h3{
+    display: flex;
+    text-align: center;
+    font-family: "poppins";
+    color: white;
+    
+}
+
+.cards{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        'box1'
+        'box2'
+        'box3';
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    background-position: center;
+    margin-inline-end: 10%;
+
+}
+
+.cards article {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5px;
+    min-height: 100px;
+    max-height: 100%;
+    margin: 5px;
+}
+
+
+.cards img {
+    background-color: #2c2c2c;
+    width: 1000px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.cardtext {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    padding: 5px;
+}
+
+
+
+/*.fiestasGaleria1 {
+    background-color: rgba(0, 0, 0, 0.541);
+    background-image: url(../imagenes/warren\ banner.jpg);
+    background-size:cover;
+    background-blend-mode:color-burn;
+    flex-direction: column;
+    padding: 30px 50px;
+    width: 1000px;
+    height: 100px;
+    border-radius: 2rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.541);
+    margin: 5px;
+}
+
+.fiestasGaleria2 {
+    background-color: rgba(0, 0, 0, 0.541);
+    background-image: url(../imagenes/CATANNEO\ IMG.jpg);
+    background-size:cover;
+    background-blend-mode: color-burn;
+    flex-direction: column;
+    padding: 30px 50px;
+    width: 1000px;
+    height: 100px;
+    border-radius: 2rem;
+    margin: 5px;
+}
+
+.fiestasGaleria3 {
+    background-color: rgba(0, 0, 0, 0.541);
+    background-image: url(../imagenes/magdalenaBanner.jpg);
+    background-size: cover;
+    background-blend-mode: color-burn;
+    flex-direction: column;
+    padding: 30px 50px;
+    width: 1000px;
+    height: 100px;
+    border-radius: 2rem;
+    margin: 5px;
+}
+
+
+    /*Artistas*/
+.pagArtistas {
+    background-image: url(../imagenes/fondo\ degrade.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    fill: #2c2c2c;
+}    
+
+.parrafoArtistas1 {
+    color: white;
+    font-family: 'poppins';
+    font-size: x-large;
+    text-align: left;
+    padding: 5px;
+    width: 1000px;
+    height: 80px;
+    margin: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 10px;
+
+}
+
+.boxartistas {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        'box1 box2 box3'
+        'box4 box5 box6';
+    padding: 10px;
+    gap: 10px;
+
+}
+
+.boxartistas img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+    /*nosotros*/
+    .pagNosotros {
+        background-image: url(../imagenes/richie\ entrevista.jpg);
+        background-image: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .parrafoNosotros {
+        background-color: #2c2c2caf;
+        color: white;
+        font-family: 'poppins';
+        font-size: x-large;
+        text-align: left;
+        padding: 10px;
+        margin-left: 50px;
+        width: 1000px;
+        height: 500px;
+        margin: 10%;
+        border-radius: 2rem; 
+        
+    }
+
+
+/* footer*/
+
+.footer {
+    display: flex;
+}
+
+footer div ul{
+    padding: 20px 50px;
+    list-style-type: none;
+
+}
+
+.footerOpciones {
+    display: flex;
+    flex-direction:column;
+}
+
+.opcionesfooter li a{ 
+    font-family: "montserrat";
+    font-weight: bolder;
+    color: white;
+    padding: 5px 10px;
+    
+}
+
+footer {
+    background-color: blueviolet;
+    background-position:bottom;
+    padding: 5%;
+}
+
+.boxRegistro{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+
+form .registro{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .navtopbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .opcionesnav a {
+        margin-right: 20px;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .boxIndexpri, .boxIndexseg {
+        flex-direction: column;
+    }
+
+    .parrafoHome, .imgIndexpres {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .navtopbar {
+        padding: 15px;
+    }
+
+    .opcionesnav {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .indexHome, .bodymain {
+        padding-top: 100px;
+    }
+
+    .parrafoHome {
+        width: 90%;
+        margin: 20px;
+        font-size: medium;
+    }
+
+    .imgIndexpres {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navtopbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px;
+    }
+
+    .opcionesnav {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .indexHome, .bodymain {
+        padding-top: 100px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .boxIndexpri, .boxIndexseg {
+        flex-direction: column;
+    }
+
+    .parrafoHome {
+        width: 100%;
+        margin: 10px;
+        height: auto;
+        font-size: small;
+    }
+
+    .imgIndexpres {
+        width: 100%;
+        padding: 10px;
+    }
+}
