@@ -1,56 +1,94 @@
-/*nav bar*/
+/* Nav bar */
 .header {
+  display: flex;
+  width: 100%;
+
+  .navtopbar {
     display: flex;
-  
-    .navtopbar {
-      display: flex;
-      padding: 30px;
-      height: 80px;
-      width: 100%;
-      justify-content: space-between;
-      align-items: center;
-      background-color: rgba(0, 0, 0, 0.616);
-      position: fixed;
-      top: 0%;
-      margin: 0;
-      .opcionesnav a {
-          display: flex;
-          font-family: "montserrat";
-          font-weight: bolder;
-          justify-content: space-between;
-          color: white;
-          width: 100%;
-          margin-right: 40px;
-        }
-        
-        .opcionesnav {
-          display: flex;
-          text-align: center;
-        }
-        
-        .bnplogonav {
-          font-family: "montserrat";
-          font-weight: bolder;
-          color: white;
-          text-align: start;
-        }
-        
-        .menu {
-          display: flex;
-          flex-direction: column;
-          gap: 3px;
-        }
-        
-        .menu span {
-          display: block;
-          width: 40px;
-          height: 3px;
-          background-color: white;
-        }
-      
+    padding: 30px;
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.616);
+    position: fixed;
+    top: 0;
+    margin: 0;
+
+    .bnplogonav {
+      font-family: "montserrat";
+      font-weight: bolder;
+      color: white;
+      text-align: start;
     }
-    
-    
+
+    .opcionesnav {
+      display: flex;
+      align-items: center;
+      margin-left: auto; // Move the nav options to the right
+
+      a {
+        display: flex;
+        font-family: "montserrat";
+        font-weight: bolder;
+        color: white;
+        margin-right: 40px; // Spacing between links
+
+        &:last-child {
+          margin-right: 0; // Remove right margin from the last element
+        }
+      }
+    }
+
+    .menu {
+      display: none; // Initially hidden for larger screens
+      flex-direction: column;
+      gap: 3px;
+
+      span {
+        display: block;
+        width: 40px;
+        height: 3px;
+        background-color: white;
+      }
+    }
+
+    // Media Query for tablets
+    @media (max-width: 768px) {
+      padding: 20px;
+      height: 60px;
+
+      .opcionesnav {
+        display: none; // Hide nav options on smaller screens
+      }
+
+      .menu {
+        display: flex; // Show menu button on smaller screens
+      }
+    }
+
+    // Media Query for mobile devices
+    @media (max-width: 480px) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+      height: auto;
+
+      .bnplogonav {
+        margin-bottom: 10px;
+      }
+
+      .menu {
+        span {
+          width: 30px; // Adjust the width of the menu lines
+          height: 2px;
+        }
+      }
+    }
   }
-  
-  
+}
+
+
+
+
+

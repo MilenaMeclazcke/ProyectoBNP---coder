@@ -46,9 +46,10 @@ form .registro {
   flex-direction: column;
 }
 
-/*nav bar*/
+/* Nav bar */
 .header {
   display: flex;
+  width: 100%;
 }
 .header .navtopbar {
   display: flex;
@@ -59,21 +60,8 @@ form .registro {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.616);
   position: fixed;
-  top: 0%;
+  top: 0;
   margin: 0;
-}
-.header .navtopbar .opcionesnav a {
-  display: flex;
-  font-family: "montserrat";
-  font-weight: bolder;
-  justify-content: space-between;
-  color: white;
-  width: 100%;
-  margin-right: 40px;
-}
-.header .navtopbar .opcionesnav {
-  display: flex;
-  text-align: center;
 }
 .header .navtopbar .bnplogonav {
   font-family: "montserrat";
@@ -81,8 +69,23 @@ form .registro {
   color: white;
   text-align: start;
 }
-.header .navtopbar .menu {
+.header .navtopbar .opcionesnav {
   display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.header .navtopbar .opcionesnav a {
+  display: flex;
+  font-family: "montserrat";
+  font-weight: bolder;
+  color: white;
+  margin-right: 40px;
+}
+.header .navtopbar .opcionesnav a:last-child {
+  margin-right: 0;
+}
+.header .navtopbar .menu {
+  display: none;
   flex-direction: column;
   gap: 3px;
 }
@@ -91,6 +94,33 @@ form .registro {
   width: 40px;
   height: 3px;
   background-color: white;
+}
+@media (max-width: 768px) {
+  .header .navtopbar {
+    padding: 20px;
+    height: 60px;
+  }
+  .header .navtopbar .opcionesnav {
+    display: none;
+  }
+  .header .navtopbar .menu {
+    display: flex;
+  }
+}
+@media (max-width: 480px) {
+  .header .navtopbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    height: auto;
+  }
+  .header .navtopbar .bnplogonav {
+    margin-bottom: 10px;
+  }
+  .header .navtopbar .menu span {
+    width: 30px;
+    height: 2px;
+  }
 }
 
 .indexHome {
@@ -243,7 +273,7 @@ div h2 {
   }
 }
 
-/* Galería */
+/* galería */
 .pagGaleria {
   background-color: #2c2c2c;
   background-image: url(../imagenes/fondo\ degrade.avif);
@@ -251,85 +281,35 @@ div h2 {
   background-repeat: no-repeat;
 }
 
-section .cardsEventosgaleria {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 5%;
-}
-
 .sectionGaleria {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   justify-content: center;
-  gap: 15px;
   align-items: center;
-}
-@media (max-width: 768px) {
-  .sectionGaleria {
-    margin: 2%;
-  }
-}
-
-.sectionGaleria img {
-  width: 90%;
-  max-width: 1000px;
-  height: auto;
-  object-fit: cover;
-}
-@media (max-width: 768px) {
-  .sectionGaleria img {
-    width: 100%;
-  }
-}
-
-h3 {
-  display: flex;
-  text-align: center;
-  font-family: "poppins";
-  color: white;
 }
 
 .cards {
   display: grid;
-  grid-template-rows: repeat(1, 3fr);
-  grid-template-rows: auto;
-  grid-row-gap: 10px;
-  grid-template-areas: "box1" "box2" "box3";
-  padding: 5%;
-  gap: 5px;
+  justify-content: center;
+  gap: 20px;
 }
-@media (max-width: 768px) {
-  .cards {
-    grid-row-gap: 5px;
-  }
-}
-
-.cards .cards article {
-  justify-items: center;
-  align-items: center;
+.cards .card {
   width: 100%;
-  height: auto;
-  min-height: 100px;
-  max-height: 100%;
-  margin: 5px;
-}
-
-.cards img {
-  background-color: #2c2c2c;
-  width: 100%;
-  max-width: 1000px;
-  height: auto;
-  object-fit: cover;
+  height: 100px;
   border-radius: 2rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.541);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
-
-.cardtext {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
+.cards .card h3 {
+  margin: auto;
+  justify-content: center;
+  font-family: "montserrat";
+  font-weight: bolder;
+  text-align: center;
   color: white;
-  padding: 5px;
 }
 
 /*Artistas*/
@@ -392,136 +372,7 @@ h3 {
   object-fit: cover;
 }
 
-/*galería*/
-.pagGaleria {
-  background-color: #2c2c2c;
-  background-image: url(../imagenes/fondo\ degrade.avif);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-section .cardsEventosgaleria {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10%;
-}
-
-.sectionGaleria {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 15px;
-  align-items: center;
-}
-
-.sectionGaleria img {
-  width: 1000px;
-  height: 500px;
-  object-fit: cover;
-}
-
-h3 {
-  display: flex;
-  text-align: center;
-  font-family: "poppins";
-  color: white;
-}
-
-.cards {
-  display: grid;
-  grid-template-rows: repeat(1, 3fr);
-  grid-template-rows: auto;
-  grid-row-gap: 10px;
-  grid-template-areas: "box1" "box2" "box3";
-  padding: 10px;
-  gap: 5px;
-}
-
-.cards .cards article {
-  justify-items: center;
-  align-items: center;
-  width: 100%;
-  height: 5px;
-  min-height: 100px;
-  max-height: 100%;
-  margin: 5px;
-}
-
-.cards img {
-  background-color: #2c2c2c;
-  width: 1000px;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 2rem;
-}
-
-.cardtext {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  color: white;
-  padding: 5px;
-}
-
-/*Artistas*/
-.pagArtistas {
-  background-image: url(../imagenes/fondo\ degrade.avif);
-  background-size: cover;
-  background-repeat: no-repeat;
-  fill: #2c2c2c;
-}
-
-.parrafoArtistas1 {
-  color: white;
-  font-family: "poppins";
-  font-size: x-large;
-  text-align: left;
-  padding: 5px;
-  width: 1000px;
-  height: 80px;
-  margin: 5%;
-  margin-left: 10%;
-  margin-right: 10%;
-  border: 10px;
-}
-
-.boxartistas {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas: "box1 box2 box3" "box4 box5 box6";
-  padding: 10px;
-  gap: 10px;
-}
-
-.boxartistas img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/*nosotros*/
-.pagNosotros {
-  background-image: url(../imagenes/richie\ entrevista.jpg);
-  background-image: cover;
-  background-repeat: no-repeat;
-}
-
-.parrafoNosotros {
-  background-color: rgba(44, 44, 44, 0.6862745098);
-  color: white;
-  font-family: "poppins";
-  font-size: x-large;
-  text-align: left;
-  padding: 10px;
-  margin-left: 50px;
-  width: 1000px;
-  height: 500px;
-  margin: 10%;
-  border-radius: 2rem;
-}
-
+/*BODY*/
 /* Media Queries */
 @media (max-width: 1024px) {
   .navtopbar {
