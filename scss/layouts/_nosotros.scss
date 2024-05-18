@@ -1,22 +1,39 @@
-/*nosotros*/
 .pagNosotros {
-    background-image: url(../imagenes/richie\ entrevista.jpg);
-    background-image: cover;
-    background-repeat: no-repeat;
-  }
-  
+  background-image: url(../imagenes/richie\ entrevista.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+
   .parrafoNosotros {
     background-color: rgba(44, 44, 44, 0.6862745098);
     color: white;
     font-family: "poppins";
     font-size: x-large;
     text-align: left;
-    padding: 10px;
-    margin-left: 50px;
-    width: 1000px;
-    height: 500px;
-    margin: 10%;
+    padding: 20px;
+    margin: 5%;
+    width: 80%;
+    max-width: 1000px;
+    height: auto;
     border-radius: 2rem;
+
+    // Media Queries
+    @media (max-width: 768px) {
+      font-size: large;
+      padding: 15px;
+      margin: 5%;
+      width: 90%;
+      height: auto;
+    }
+
+    @media (max-width: 480px) {
+      font-size: medium;
+      padding: 10px;
+      margin: 5%;
+      width: 100%;
+      height: auto;
+    }
   }
-  
-  
+}

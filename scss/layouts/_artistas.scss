@@ -1,38 +1,59 @@
-    /*Artistas*/
-    .pagArtistas {
-        background-image: url(../imagenes/fondo\ degrade.avif);
-        background-size: cover;
-        background-repeat: no-repeat;
-        fill: #2c2c2c;
-      }
-      
-      .parrafoArtistas1 {
-        color: white;
-        font-family: "poppins";
-        font-size: x-large;
-        text-align: left;
-        padding: 5px;
-        width: 1000px;
-        height: 80px;
-        margin: 5%;
-        margin-left: 10%;
-        margin-right: 10%;
-        border: 10px;
-      }
-      
-      .boxartistas {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas: "box1 box2 box3" "box4 box5 box6";
-        padding: 10px;
-        gap: 10px;
-      }
-      
-      .boxartistas img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-      
-      
+/*Artistas*/
+.pagArtistas {
+  background-image: url(../imagenes/fondo\ degrade.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  fill: #2c2c2c;
+}
+
+.parrafoArtistas1 {
+  color: white;
+  font-family: "poppins";
+  font-size: x-large;
+  text-align: left;
+  padding: 5px;
+  width: 1000px;
+  height: 80px;
+  margin: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 10px;
+
+  // Media Query para dispositivos móviles
+  @media (max-width: 768px) {
+    width: 90%; // Reducir el ancho para adaptarse mejor en dispositivos más pequeños
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  // Media Query para dispositivos móviles pequeños
+  @media (max-width: 480px) {
+    font-size: large; // Reducir el tamaño de la fuente para una mejor legibilidad
+    height: auto; // Permitir que la altura se ajuste al contenido
+  }
+}
+
+.boxartistas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "box1 box2 box3" "box4 box5 box6";
+  padding: 10px;
+  gap: 10px;
+
+  // Media Query para tablet
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr); // Cambiar a 2 columnas en dispositivos medianos
+  }
+
+  // Media Query para dispositivos móviles
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr; // Cambiar a 1 columna en dispositivos pequeños
+  }
+}
+
+.boxartistas img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
