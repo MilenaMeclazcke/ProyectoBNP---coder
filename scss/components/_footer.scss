@@ -1,0 +1,40 @@
+/* footer*/
+.footer {
+    display: flex;
+  }
+  
+  footer div ul {
+    padding: 20px 50px;
+    list-style-type: none;
+  }
+  
+  .footerOpciones {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .opcionesfooter li a {
+    font-family: "montserrat";
+    font-weight: bolder;
+    color: white;
+    padding: 5px 10px;
+  }
+  
+  footer {
+    background-color: blueviolet;
+    background-position: bottom;
+    padding: 5%;
+  }
+  
+  .boxRegistro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  form .registro {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  

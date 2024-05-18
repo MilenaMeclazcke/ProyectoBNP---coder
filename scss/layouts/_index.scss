@@ -1,0 +1,120 @@
+.indexHome {
+    background-image: url(../imagenes/degrade\ verdeazul.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+  
+  .bodymain {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    max-height: 100%;
+  }
+  
+  .boxIndexpri, .boxIndexseg {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 30px;
+    align-items: center;
+  }
+  
+  main h1 {
+    font-family: "poppins";
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 10%;
+  }
+  
+  div h2 {
+    font-family: "montserrat";
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: left;
+    color: white;
+    margin: 5%;
+    margin-bottom: 0%;
+    padding: 5%;
+  }
+  
+  .parrafoHome {
+    color: white;
+    font-family: "poppins";
+    font-size: large;
+    text-align: left;
+    padding: 10px;
+    margin-left: 50px;
+    width: 700px;
+    height: 600px;
+    margin: 10%;
+  }
+  
+  .imgreutilizar {
+    display: flex;
+    width: 50%;
+    height: 50%;
+    margin: 10px;
+    padding: 50px;
+    border-radius: 2rem;
+  }
+  
+  /* Media Queries */
+  
+  @media (max-width: 768px) {
+    .parrafoHome {
+      width: 90%;
+      height: auto;
+      margin: 5%;
+      padding: 5%;
+    }
+  
+    .imgreutilizar {
+      width: 70%;
+      height: auto;
+      padding: 20px;
+    }
+  
+    div h2 {
+      font-size: x-large;
+      padding: 2%;
+    }
+  
+    main h1 {
+      margin: 5%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .boxIndexpri, .boxIndexseg {
+      flex-direction: column;
+      gap: 10px;
+      padding: 15px;
+    }
+  
+    .parrafoHome {
+      width: 100%;
+      height: auto;
+      margin: 2%;
+      padding: 5%;
+    }
+  
+    .imgreutilizar {
+      width: 100%;
+      height: auto;
+      margin: 5px;
+      padding: 10px;
+    }
+  
+    div h2 {
+      font-size: large;
+      padding: 1%;
+    }
+  
+    main h1 {
+      font-size: large;
+      margin: 5%;
+    }
+  }
+  
