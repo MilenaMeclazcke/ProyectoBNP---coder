@@ -1,0 +1,834 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+/* footer*/
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .boxRegistro {
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.footer h3 {
+  font-family: "poppins";
+  color: white;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.footer form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.footer form div {
+  margin-bottom: 10px;
+  text-align: left;
+  padding: 0 5px;
+  flex: 1;
+}
+.footer form label {
+  display: block;
+  font-family: "montserrat";
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+}
+.footer form input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  font-family: "montserrat";
+  font-size: 0.9rem;
+  background: transparent;
+  color: white;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 100px;
+}
+form div {
+  margin-bottom: 15px;
+}
+form label {
+  display: block;
+  font-family: "montserrat";
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: "montserrat";
+}
+form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-family: "montserrat";
+  font-weight: bold;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: darkviolet;
+}
+
+@media (max-width: 768px) {
+  .pagContacto {
+    padding: 10px;
+  }
+  .pagContacto h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    margin-top: 50px;
+  }
+  .pagContacto form {
+    padding: 15px;
+    margin-bottom: 50px;
+  }
+  .pagContacto form input,
+  .pagContacto form textarea {
+    padding: 8px;
+  }
+  .pagContacto form button {
+    padding: 8px;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .boxRegistro,
+  .footer .footer-links {
+    max-width: 100%;
+    text-align: center;
+  }
+  .boxRegistro {
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .pagContacto {
+    padding: 5px;
+  }
+  .pagContacto h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  .pagContacto form {
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+  .pagContacto form input,
+  .pagContacto form textarea {
+    padding: 6px;
+  }
+  .pagContacto form button {
+    padding: 6px;
+  }
+  .footer .boxRegistro {
+    max-width: 100%;
+  }
+}
+footer div ul {
+  padding: 20px 50px;
+  list-style-type: none;
+}
+
+.footer-links {
+  margin-bottom: 10px;
+  flex: 1;
+  list-style: none;
+  padding: 0;
+}
+
+.footerOpciones {
+  display: flex;
+  flex-direction: column;
+}
+
+.opcionesfooter {
+  list-style: none;
+  padding: 0;
+  font-family: "montserrat";
+  font-weight: bolder;
+  color: white;
+}
+.opcionesfooter li {
+  margin-bottom: 10px;
+  text-align: left;
+}
+.opcionesfooter li a {
+  color: white;
+  text-decoration: none;
+}
+.opcionesfooter li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .pagContacto {
+    padding: 10px;
+  }
+  .pagContacto h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    margin-top: 50px;
+  }
+  .pagContacto form {
+    padding: 15px;
+    margin-bottom: 50px;
+  }
+  .pagContacto form input,
+  .pagContacto form textarea {
+    padding: 8px;
+  }
+  .pagContacto form button {
+    padding: 8px;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .boxRegistro,
+  .footer .footer-links {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .pagContacto {
+    padding: 5px;
+  }
+  .pagContacto h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  .pagContacto form {
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+  .pagContacto form input,
+  .pagContacto form textarea {
+    padding: 6px;
+  }
+  .pagContacto form button {
+    padding: 6px;
+  }
+  .footer .boxRegistro {
+    max-width: 100%;
+  }
+}
+/* Nav bar */
+.header {
+  display: flex;
+  width: 100%;
+}
+.header .navtopbar {
+  display: flex;
+  padding: 30px;
+  height: 80px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.616);
+  position: fixed;
+  top: 0;
+  margin: 0;
+}
+.header .navtopbar .bnplogonav {
+  font-family: "montserrat";
+  font-weight: bolder;
+  color: white;
+  text-align: start;
+}
+.header .navtopbar .opcionesnav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.header .navtopbar .opcionesnav a {
+  display: flex;
+  font-family: "montserrat";
+  font-weight: bolder;
+  color: white;
+  margin-right: 40px;
+}
+.header .navtopbar .opcionesnav a:last-child {
+  margin-right: 0;
+}
+.header .navtopbar .menu {
+  display: none;
+  flex-direction: column;
+  gap: 3px;
+}
+.header .navtopbar .menu span {
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: white;
+}
+@media (max-width: 768px) {
+  .header .navtopbar {
+    padding: 20px;
+    height: 60px;
+  }
+  .header .navtopbar .opcionesnav {
+    display: none;
+  }
+  .header .navtopbar .menu {
+    display: flex;
+  }
+}
+@media (max-width: 480px) {
+  .header .navtopbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    height: auto;
+  }
+  .header .navtopbar .bnplogonav {
+    margin-bottom: 10px;
+  }
+  .header .navtopbar .menu span {
+    width: 30px;
+    height: 2px;
+  }
+}
+
+.indexHome {
+  background-image: url(../imagenes/degrade\ verdeazul.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.bodymain {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  max-height: 100%;
+}
+
+.boxIndexpri, .boxIndexseg {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 30px;
+  align-items: center;
+}
+
+main h1 {
+  font-family: "poppins";
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin: 10%;
+}
+
+div h2 {
+  font-family: "montserrat";
+  font-size: xx-large;
+  font-weight: bolder;
+  text-align: left;
+  color: white;
+  margin: 5%;
+  margin-bottom: 0%;
+  padding: 5%;
+}
+
+.parrafoHome {
+  color: white;
+  font-family: "poppins";
+  font-size: large;
+  text-align: left;
+  padding: 10px;
+  margin-left: 50px;
+  width: 700px;
+  height: 600px;
+  margin: 10%;
+}
+
+.imgreutilizar {
+  display: flex;
+  width: 50%;
+  height: 50%;
+  margin: 10px;
+  padding: 50px;
+  border-radius: 2rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .parrafoHome {
+    width: 90%;
+    height: auto;
+    margin: 5%;
+    padding: 5%;
+  }
+  .imgreutilizar {
+    width: 70%;
+    height: auto;
+    padding: 20px;
+  }
+  div h2 {
+    font-size: x-large;
+    padding: 2%;
+  }
+  main h1 {
+    margin: 5%;
+  }
+}
+@media (max-width: 480px) {
+  .boxIndexpri, .boxIndexseg {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+  .parrafoHome {
+    width: 100%;
+    height: auto;
+    margin: 2%;
+    padding: 5%;
+  }
+  .imgreutilizar {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    padding: 10px;
+  }
+  div h2 {
+    font-size: large;
+    padding: 1%;
+  }
+  main h1 {
+    font-size: large;
+    margin: 5%;
+  }
+}
+.pagNosotros {
+  background-image: url(../imagenes/richie\ entrevista.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+.pagNosotros .parrafoNosotros {
+  background-color: rgba(44, 44, 44, 0.6862745098);
+  color: white;
+  font-family: "poppins";
+  font-size: x-large;
+  text-align: left;
+  padding: 20px;
+  margin: 5%;
+  width: 80%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 2rem;
+}
+@media (max-width: 768px) {
+  .pagNosotros .parrafoNosotros {
+    font-size: large;
+    padding: 15px;
+    margin: 5%;
+    width: 90%;
+    height: auto;
+  }
+}
+@media (max-width: 480px) {
+  .pagNosotros .parrafoNosotros {
+    font-size: medium;
+    padding: 10px;
+    margin: 5%;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.pagGaleria {
+  background-color: #2c2c2c;
+  background-image: url(../imagenes/fondo\ degrade.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-block-end: 100px;
+}
+.cards .card {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 2rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.541);
+  background-color: rgba(0, 0, 0, 0.541);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cards .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 2rem;
+  z-index: 1;
+}
+.cards .card h3 {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  justify-content: center;
+  transform: translateX(-50%);
+  font-family: "poppins";
+  color: white;
+  border-radius: 5px;
+  margin: 0;
+  z-index: 1;
+}
+.cards .card img {
+  width: 100%;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2rem;
+}
+
+@media (max-width: 768px) {
+  section .cards {
+    margin: 5%;
+    gap: 15px;
+  }
+  .cards {
+    gap: 15px;
+  }
+  .cards .card {
+    max-width: 90%;
+    padding: 20px 0;
+  }
+  .cards .card h3 {
+    font-size: 1.2rem;
+    top: 5px;
+  }
+  .cards .card img {
+    height: 80px;
+  }
+}
+@media (max-width: 480px) {
+  section .cards {
+    margin: 5%;
+    gap: 10px;
+  }
+  .cards {
+    gap: 10px;
+  }
+  .cards .card {
+    max-width: 100%;
+    padding: 15px 0;
+  }
+  .cards .card h3 {
+    font-size: 1rem;
+    top: 5px;
+  }
+  .cards .card img {
+    height: 70px;
+  }
+}
+/*Artistas*/
+.pagArtistas {
+  background-image: url(../imagenes/fondo\ degrade.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  fill: #2c2c2c;
+}
+
+.parrafoArtistas1 {
+  color: white;
+  font-family: "poppins";
+  font-size: x-large;
+  text-align: left;
+  padding: 5px;
+  width: 1000px;
+  height: 80px;
+  margin: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 10px;
+}
+@media (max-width: 768px) {
+  .parrafoArtistas1 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media (max-width: 480px) {
+  .parrafoArtistas1 {
+    font-size: large;
+    height: auto;
+  }
+}
+
+.boxartistas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "box1 box2 box3" "box4 box5 box6";
+  padding: 10px;
+  gap: 10px;
+}
+@media (max-width: 768px) {
+  .boxartistas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .boxartistas {
+    grid-template-columns: 1fr;
+  }
+}
+
+.boxartistas img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.pagContacto {
+  background-color: #2c2c2c;
+  background-image: url(../imagenes/fondo\ degrade.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pagContacto h2 {
+  font-family: "poppins";
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+.pagContacto form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 100px;
+}
+.pagContacto form div {
+  margin-bottom: 15px;
+}
+.pagContacto form label {
+  display: block;
+  font-family: "montserrat";
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.pagContacto form input,
+.pagContacto form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: "montserrat";
+}
+.pagContacto form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-family: "montserrat";
+  font-weight: bold;
+  cursor: pointer;
+}
+.pagContacto form button:hover {
+  background-color: darkviolet;
+}
+
+.header {
+  background-color: #333;
+}
+
+.navtopbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bnplogonav {
+  font-family: "poppins";
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.opcionesnav {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+.opcionesnav li {
+  margin-left: 20px;
+}
+.opcionesnav li a {
+  color: white;
+  text-decoration: none;
+  font-family: "montserrat";
+  font-size: 1rem;
+}
+.opcionesnav li a:hover {
+  text-decoration: underline;
+}
+
+.menu {
+  display: none;
+}
+
+/*BODY*/
+/* Media Queries */
+@media (max-width: 1024px) {
+  .navtopbar {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .opcionesnav a {
+    margin-right: 20px;
+  }
+  .menu {
+    display: flex;
+  }
+  .boxIndexpri, .boxIndexseg {
+    flex-direction: column;
+  }
+  .parrafoHome, .imgIndexpres {
+    width: 80%;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .navtopbar {
+    padding: 15px;
+  }
+  .opcionesnav {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+  .indexHome, .bodymain {
+    padding-top: 100px;
+  }
+  .parrafoHome {
+    width: 90%;
+    margin: 20px;
+    font-size: medium;
+  }
+  .imgIndexpres {
+    width: 90%;
+    padding: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .navtopbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px;
+  }
+  .opcionesnav {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+  .indexHome, .bodymain {
+    padding-top: 100px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .boxIndexpri, .boxIndexseg {
+    flex-direction: column;
+  }
+  .parrafoHome {
+    width: 100%;
+    margin: 10px;
+    height: auto;
+    font-size: small;
+  }
+  .imgIndexpres {
+    width: 100%;
+    padding: 10px;
+  }
+  .menu {
+    display: flex;
+  }
+  .indexHome, .bodymain {
+    padding-top: 100px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .boxIndexpri, .boxIndexseg {
+    flex-direction: column;
+  }
+  .parrafoHome {
+    width: 100%;
+    margin: 10px;
+    height: auto;
+    font-size: small;
+  }
+  .imgIndexpres {
+    width: 100%;
+    padding: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

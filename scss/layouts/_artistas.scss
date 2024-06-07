@@ -19,17 +19,17 @@
   margin-right: 10%;
   border: 10px;
 
-  // Media Query para dispositivos móviles
+
   @media (max-width: 768px) {
-    width: 90%; // Reducir el ancho para adaptarse mejor en dispositivos más pequeños
+    width: 90%; 
     margin-left: 5%;
     margin-right: 5%;
   }
 
-  // Media Query para dispositivos móviles pequeños
+
   @media (max-width: 480px) {
-    font-size: large; // Reducir el tamaño de la fuente para una mejor legibilidad
-    height: auto; // Permitir que la altura se ajuste al contenido
+    font-size: large; 
+    height: auto; 
   }
 }
 
@@ -43,12 +43,12 @@
 
   // Media Query para tablet
   @media (max-width: 768px) {
-    grid-template-columns: repeat(2, 1fr); // Cambiar a 2 columnas en dispositivos medianos
+    grid-template-columns: repeat(2, 1fr); 
   }
 
   // Media Query para dispositivos móviles
   @media (max-width: 480px) {
-    grid-template-columns: 1fr; // Cambiar a 1 columna en dispositivos pequeños
+    grid-template-columns: 1fr; 
   }
 }
 

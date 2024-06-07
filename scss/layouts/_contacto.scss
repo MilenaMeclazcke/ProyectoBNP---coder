@@ -1,0 +1,105 @@
+.pagContacto {
+    background-color: #2c2c2c;
+    background-image: url(../imagenes/fondo\ degrade.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    h2 {
+      font-family: "poppins";
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 20px;
+      margin-top: 100px;
+    }
+  
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 100px;
+  
+      div {
+        margin-bottom: 15px;
+      }
+  
+      label {
+        display: block;
+        font-family: "montserrat";
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+  
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-family: "montserrat";
+      }
+  
+      button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: blueviolet;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-family: "montserrat";
+        font-weight: bold;
+        cursor: pointer;
+      }
+  
+      button:hover {
+        background-color: darkviolet;
+      }
+    }
+  }
+  
+  .header {
+    background-color: #333;
+  }
+  
+  .navtopbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .bnplogonav {
+    font-family: "poppins";
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  .opcionesnav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+  
+    li {
+      margin-left: 20px;
+  
+      a {
+        color: white;
+        text-decoration: none;
+        font-family: "montserrat";
+        font-size: 1rem;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  
+  .menu {
+    display: none;
+  }
+  

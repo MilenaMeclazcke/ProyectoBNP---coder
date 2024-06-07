@@ -25,23 +25,23 @@
     .opcionesnav {
       display: flex;
       align-items: center;
-      margin-left: auto; // Move the nav options to the right
+      margin-left: auto; 
 
       a {
         display: flex;
         font-family: "montserrat";
         font-weight: bolder;
         color: white;
-        margin-right: 40px; // Spacing between links
+        margin-right: 40px; 
 
         &:last-child {
-          margin-right: 0; // Remove right margin from the last element
+          margin-right: 0; 
         }
       }
     }
 
     .menu {
-      display: none; // Initially hidden for larger screens
+      display: none; 
       flex-direction: column;
       gap: 3px;
 
@@ -59,15 +59,15 @@
       height: 60px;
 
       .opcionesnav {
-        display: none; // Hide nav options on smaller screens
+        display: none; 
       }
 
       .menu {
-        display: flex; // Show menu button on smaller screens
+        display: flex; 
       }
     }
 
-    // Media Query for mobile devices
+    // Media Query
     @media (max-width: 480px) {
       flex-direction: column;
       align-items: flex-start;
@@ -80,7 +80,7 @@
 
       .menu {
         span {
-          width: 30px; // Adjust the width of the menu lines
+          width: 30px; 
           height: 2px;
         }
       }
